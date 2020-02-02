@@ -1,0 +1,37 @@
+body {
+  background: #fcfcfc;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Courier New', Courier;
+}
+
+body .container {
+  width: 30%;
+  background: gold;
+  border-radius: 10px;
+}
+
+body .container .inner {
+  background: burlywood;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-clip-path: circle(50% at 0% 0%);
+          clip-path: circle(50% at 0% 0%);
+  -webkit-transition: -webkit-clip-path .5s ease-in-out;
+  transition: -webkit-clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
+}
+
+body:hover .inner {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+}
+/*# sourceMappingURL=style.css.map */

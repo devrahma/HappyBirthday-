@@ -1,0 +1,32 @@
+body{
+    background: rgb(252, 252, 252);
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Courier New', Courier;
+
+
+.container{
+    width: 30%;
+    background: gold;
+    border-radius: 10px;
+
+    .inner{
+        background: burlywood;
+        padding: 1em;
+        border-radius: 10px;
+        width: 100%;
+        clip-path: circle(50% at 0% 0%);
+        transition: clip-path .5s ease-in-out;
+    }
+
+}
+
+
+&:hover .inner{
+    clip-path: circle(75%);
+}
+
+}
